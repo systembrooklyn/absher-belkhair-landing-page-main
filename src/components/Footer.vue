@@ -33,11 +33,7 @@ const socialItems = [
           <div class="widget">
             <h3>{{ t("connectHeading") }}</h3>
             <ul class="list-unstyled social">
-              <li
-                v-for="(item, index) in socialItems"
-                :key="index"
-                style="margin-right: 5px"
-              >
+              <li v-for="(item, index) in socialItems" :key="index" style="margin-right: 5px">
                 <a :href="item.link" target="_blank">
                   <i :class="item.icon"></i>
                 </a>
@@ -47,30 +43,34 @@ const socialItems = [
         </div>
         <div class="col-lg-4">
           <div class="widget">
-  <h3 class="d-flex align-items-center">
-    
-    {{ t("column4Heading") }}
-  </h3>
-  <address>
-    <span class="icon-home mr-2"></span> 
-    {{ t("address") }}</address>
-  
-    <ul dir="ltr" class="list-unstyled links mb-4 ">
-  <li>
-    <a :href="'tel:+971529670703'" class="d-flex align-items-center">
-      <span class="mt-1 icon-phone mr-2"></span>
-      <span>+971 529 670 703</span>
-    </a>
-  </li>
-  <li>
-    <a :href="'tel:+971544144299'" class="d-flex align-items-center">
-      <span class="mt-1 icon-phone mr-2"></span>
-      <span>+971 544 144 299</span>
-    </a>
-  </li>
-</ul>
+            <h3 class="d-flex align-items-center">
 
-</div>
+              {{ t("column4Heading") }}
+            </h3>
+            <ul dir="ltr" class="list-unstyled links mb-4 ">
+              <address class="d-flex align-items-center" :class="{ 'flex-row-reverse': $i18n.locale === 'ar' }">
+                <span class="icon-home mr-2"></span>
+                <span class="address mr-2"> {{ t("address") }} </span>
+              </address>
+
+
+              <li>
+                <a :href="'tel:+971529670703'" class="d-flex align-items-center"
+                  :class="{ 'flex-row-reverse': $i18n.locale === 'ar' }">
+                  <span class="mt-1 icon-phone mr-2"></span>
+                  <span>+971 529 670 703</span>
+                </a>
+              </li>
+              <li>
+                <a :href="'tel:+971544144299'" class="d-flex align-items-center"
+                  :class="{ 'flex-row-reverse': $i18n.locale === 'ar' }">
+                  <span class="mt-1 icon-phone mr-2"></span>
+                  <span>+971 544 144 299</span>
+                </a>
+              </li>
+            </ul>
+
+          </div>
 
         </div>
 
@@ -78,13 +78,8 @@ const socialItems = [
           <h3 class="mb-4">{{ t("mapHeading") }}</h3>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.3842451008372!2d55.33611372584396!3d25.257656529251538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5ce923dd170f%3A0xe05fb3a7f45e0b08!2sGolden%20Business%20Center!5e0!3m2!1sar!2seg!4v1740073430240!5m2!1sar!2seg"
-            width="300"
-            height="250"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            width="300" height="250" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
@@ -107,9 +102,11 @@ const socialItems = [
   color: #888;
   padding: 70px 0 0 0;
 }
+
 .foot-logo img {
   width: 25px;
 }
+
 .site-footer a {
   color: #407bff;
   position: relative;
@@ -133,9 +130,9 @@ const socialItems = [
   margin-bottom: 30px;
 }
 
-.site-footer .widget .links {
+/* .site-footer .widget .links {
   width: 200px;
-}
+} */
 
 .site-footer .widget .links li {
   margin-bottom: 10px;
@@ -163,7 +160,7 @@ const socialItems = [
   display: none;
 }
 
-.site-footer .social li a > i {
+.site-footer .social li a>i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -175,5 +172,9 @@ const socialItems = [
 .site-footer .social li a:hover {
   background: #06007a;
   color: #ffffff;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 </style>

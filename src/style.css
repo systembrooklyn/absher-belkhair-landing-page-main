@@ -28,7 +28,7 @@ body.rtl {
 
   .main-menu {
     text-align: right;
-    margin-left: auto; /* إضافة مسافة من اليسار */
+    margin-left: auto; 
     margin-right: 0;
   }
 

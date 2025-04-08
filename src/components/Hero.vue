@@ -111,7 +111,7 @@ const { t } = useI18n();
 }
 
 .img1 {
-  border-radius: 22px;
+  border-radius: 80px 0 0 0;
 }
 
 .img2 {

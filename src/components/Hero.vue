@@ -3,7 +3,7 @@ import { useI18n } from "vue-i18n";
 
 import img3 from "../assets/images/dubi.jpg";
 import img2 from "../assets/images/us.jpg";
-import img1 from "../assets/images/app.webp";
+// import img1 from "../assets/images/app.webp";
 
 const { t } = useI18n();
 </script>

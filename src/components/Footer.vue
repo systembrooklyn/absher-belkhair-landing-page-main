@@ -55,20 +55,21 @@ const socialItems = [
     <span class="icon-home mr-2"></span> 
     {{ t("address") }}</address>
   
-  <ul class="list-unstyled links mb-4">
-    <li>
-      <a :href="'tel:' + t('phone1')" class="d-flex align-items-center">
-        <span class="mt-1 icon-phone mr-2"></span>
-        <span v-html="t('phone1')"></span>
-      </a>
-    </li>
-    <li>
-      <a :href="'tel:' + t('phone2')" class="d-flex align-items-center">
-        <span class="mt-1 icon-phone mr-2"></span>
-        <span v-html="t('phone2')"></span>
-      </a>
-    </li>
-  </ul>
+    <ul dir="ltr" class="list-unstyled links mb-4 ">
+  <li>
+    <a :href="'tel:+971529670703'" class="d-flex align-items-center">
+      <span class="mt-1 icon-phone mr-2"></span>
+      <span>+971 529 670 703</span>
+    </a>
+  </li>
+  <li>
+    <a :href="'tel:+971544144299'" class="d-flex align-items-center">
+      <span class="mt-1 icon-phone mr-2"></span>
+      <span>+971 544 144 299</span>
+    </a>
+  </li>
+</ul>
+
 </div>
 
         </div>
@@ -133,7 +134,7 @@ const socialItems = [
 }
 
 .site-footer .widget .links {
-  width: 150px;
+  width: 200px;
 }
 
 .site-footer .widget .links li {

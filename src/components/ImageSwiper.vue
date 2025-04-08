@@ -16,8 +16,8 @@ const images = [
 ];
 
 const config = {
-  height: 400,
-  itemsToShow: 2,
+  height: 100,
+  itemsToShow: 4,
   gap: 5,
   autoplay: 4000,
   wrapAround: true,
@@ -26,9 +26,9 @@ const config = {
 </script>
 
 <template>
-  <Carousel v-bind="config">
+  <Carousel v-bind="config" >
     <Slide v-for="image in images" :key="image.id">
-      <img :src="image.url" alt="image" class="img-fluid" />
+      <img :src="image.url" alt="image" class="img-fluid imgSlid" />
     </Slide>
 
     <template #addons>
@@ -36,3 +36,11 @@ const config = {
     </template>
   </Carousel>
 </template>
+
+<style scoped>
+.imgSlid {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+</style>

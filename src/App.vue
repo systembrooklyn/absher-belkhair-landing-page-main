@@ -21,7 +21,7 @@ watchEffect(() => {
   <Header />
   <Hero />
   <Service />
-  <div class="text-center container con">
+  <div class="text-center container con ">
     <h2 class="swiper-title">{{ t("partnershipsTitle") }}</h2>
     <p class="swiper-subtitle">{{ t("partnershipsSubtitle") }}</p>
   </div>
@@ -34,6 +34,7 @@ watchEffect(() => {
 <style scoped>
 .con{
   margin-top: 80px;
+  margin-bottom: 20px;
 }
 .swiper-title {
   font-size: 30px;

@@ -68,6 +68,17 @@ const totalTeam = "20";
   margin-top: 50px;
   align-items: center;
   display: flex;
+  position: relative;
+}
+.content::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+
 }
 .about-content {
   display: flex;
@@ -96,7 +107,7 @@ const totalTeam = "20";
 }
 
 .info {
-  color: #3b3b3b;
+  color: #171330;
   width: 70%;
   font-size: 20px;
 }
